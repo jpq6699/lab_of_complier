@@ -1,0 +1,16 @@
+int gkd (int a[], int b[],int n) { /* calculate the gcd of u and v */
+    int i;
+    for(i=0;i<n;i=i+1;)
+    {
+        if(a[i]!=b[i])
+        {
+            return 0;
+        }
+    }
+    return 1;
+}
+int main() {
+    int x[100]; int y[100]; int n=100;
+    gkd(x,y,n);
+    return 0;
+}
